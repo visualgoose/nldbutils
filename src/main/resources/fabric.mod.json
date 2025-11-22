@@ -1,0 +1,40 @@
+
+{
+	"schemaVersion": 1,
+	"id": "nldbutils",
+	"version": "${version}",
+	"name": "nldbutils",
+	"description": "Currently just a tpa mod",
+	"authors": [
+		"VisualGoose"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nldbutils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "visualgoose.nldbutils.NLDBUtils"
+		],
+        "cardinal-components-world": [
+          "visualgoose.nldbutils.ModComponents"
+        ]
+	},
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+    "custom": {
+      "cardinal-components": [
+        "nldbutils:tpa_requests"
+      ]
+    }
+}
